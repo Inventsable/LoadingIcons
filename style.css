@@ -1,0 +1,62 @@
+:root {
+    --color-bg: #1d1e22;
+    font-family: 'Roboto';
+    font-size: 12px;
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+/* Required to show */
+svg { width: 100%; }
+
+
+/* Mask must be same color as background, not transparent */
+.anim-mask {
+    fill: var(--color-bg);
+}
+
+/* Fills and strokes both used */
+.anim-main {
+    /* fill: red; */
+    /* stroke: red; */
+    animation: rainbow 2.5s linear;
+	animation-iteration-count: infinite;
+}
+
+.site-wrap {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg);
+    padding: 5rem 0px;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.container {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--color-bg);
+}
+
+
+@keyframes rainbow{
+		100%,0%{ fill: rgb(255,0,0); stroke: rgb(255,0,0); }
+		8%{ fill: rgb(255,127,0); stroke: rgb(255,127,0); }
+		16%{ fill: rgb(255,255,0); stroke: rgb(255,255,0); }
+		25%{ fill: rgb(127,255,0); stroke: rgb(127,255,0); }
+		33%{ fill: rgb(0,255,0); stroke: rgb(0,255,0); }
+		41%{ fill: rgb(0,255,127); stroke: rgb(0,255,127); }
+		50%{ fill: rgb(0,255,255); stroke: rgb(0,255,255); }
+		58%{ fill: rgb(0,127,255); stroke: rgb(0,127,255); }
+		66%{ fill: rgb(0,0,255); stroke: rgb(0,0,255); }
+		75%{ fill: rgb(127,0,255); stroke: rgb(127,0,255); }
+		83%{ fill: rgb(255,0,255); stroke: rgb(255,0,255); }
+		91%{ fill: rgb(255,0,127); stroke: rgb(255,0,127); }
+}
