@@ -19,12 +19,21 @@ svg { width: 100%; }
     fill: var(--color-bg);
 }
 
-/* Fills and strokes both used */
+/* Fills and strokes both used in animation */
 .anim-main {
+  /* Can use a direct color... */
     /* fill: red; */
     /* stroke: red; */
+
+    /* ...or CSS animation value */
     animation: rainbow 2.5s linear;
-	animation-iteration-count: infinite;
+	  animation-iteration-count: infinite;
+}
+
+/* For demonstration, Blue and Yellow variations are .anim-color instead of .anim-main */
+.anim-color {
+  fill: white;
+  stroke: white;
 }
 
 .site-wrap {

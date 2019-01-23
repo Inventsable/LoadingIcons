@@ -1,10 +1,14 @@
 window.Event = new Vue();
 
 Vue.component('sandbox', {
+    
+    // This Vue component takes care of all overhead for Bodymovin'
     template: `
     <div class="site-wrap">
         <div class="container">
-            <lottie-simple classname="anim-simple" file="red" />
+            <lottie-simple classname="anim-red" file="red" />
+            <lottie-simple classname="anim-yellow" file="yellow" />
+            <lottie-simple classname="anim-blue" file="blue" />
          </div>
     </div>
   `,
