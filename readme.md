@@ -1,4 +1,4 @@
-## [See on repl.it](https://repl.it/@Inventsable/Wrench-Loading-Icons)
+# [See live demo on repl.it](https://repl.it/@Inventsable/Wrench-Loading-Icons)
 
 ![](https://thumbs.gfycat.com/PepperyAcademicChafer-size_restricted.gif)
 
@@ -10,3 +10,4 @@ Colors are flexible and defined by CSS class, important things to note about use
 * The Blue and Yellow variations' main class is `anim-color` instead of `anim-main`. This is all commented in the `style.css` sheet.
 * If you're confused about vanilla JS use (instead of a Vue context), [see examples and documentation on the main lottie page here](https://github.com/airbnb/lottie-web).
 
+## Need compatibility with React-Native? [Use this editor](https://editor.lottiefiles.com/) on any JSON in `./wrenchesNoCSS/`

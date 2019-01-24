@@ -1,7 +1,7 @@
 window.Event = new Vue();
 
 Vue.component('sandbox', {
-    
+
     // This Vue component takes care of all overhead for Bodymovin'
     template: `
     <div class="site-wrap">
@@ -38,12 +38,14 @@ Vue.component('lottie-simple', {
                 loop: true,
                 prerender: true,
                 autoplay: true,
-                path: `./${this.file}.json`,
+                path: `./wrenches/${this.file}.json`,
             };
             return lottie.loadAnimation(animData);
         },
     }
 })
+
+
 
 
 var app = new Vue({
